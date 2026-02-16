@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | Sai Cloth Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sai Cloth Store</h1>
+</header>
+
+<section class="checkout">
+  <h2>Checkout</h2>
+
+  <form id="checkoutForm">
+    <input type="text" id="name" placeholder="Customer Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+    <h3>Order Summary</h3>
+    <div id="orderSummary"></div>
+
+    <p>Total: ₹<span id="totalAmount">0</span></p>
+    <p>Advance (20%): ₹<span id="advanceAmount">0</span></p>
+
+    <button type="submit" class="btn">Pay Advance</button>
+  </form>
+</section>
+
+<script src="js/main.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</body>
+</html>

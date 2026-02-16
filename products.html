@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | Sai Cloth Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sai Cloth Store</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<section class="products">
+  <div class="product-card">
+    <img src="images/products/shirt1.jpg" alt="Men Shirt">
+    <h3>Men Cotton Shirt</h3>
+    <p>₹799</p>
+    <button onclick="addToCart('Men Cotton Shirt', 799)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/products/saree1.jpg" alt="Saree">
+    <h3>Designer Saree</h3>
+    <p>₹1,999</p>
+    <button onclick="addToCart('Designer Saree', 1999)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/products/kids1.jpg" alt="Kids Wear">
+    <h3>Kids Wear Set</h3>
+    <p>₹599</p>
+    <button onclick="addToCart('Kids Wear Set', 599)">Add to Cart</button>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
